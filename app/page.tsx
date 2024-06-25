@@ -7,18 +7,25 @@ import Contact from "@/components/Contact";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Pricing from "@/components/Pricing";
+import Technologies from "@/components/Technologies";
 import Testimonials from "@/components/Testimonials";
 import Video from "@/components/Video";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const metadata: Metadata = {
+  title: "Reactify IT Solutions",
+};
+
 export default function Home() {
   return (
-    <>
+    <div className={inter.className}>
       <ScrollUp />
       <Hero />
       <Features />
+      <Technologies />
       <Video />
       <Brands />
       <AboutSectionOne />
@@ -27,6 +34,6 @@ export default function Home() {
       <Pricing />
       <Blog />
       <Contact />
-    </>
+    </div>
   );
 }

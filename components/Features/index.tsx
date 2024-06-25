@@ -6,12 +6,12 @@ const Features = () => {
   return (
     <>
       <section
-        id="features"
+        id="services"
         className="bg-primary/[.03] py-16 md:py-20 lg:py-28"
       >
         <div className="container">
           <SectionTitle
-            title="Main Features"
+            title="Our Services"
             paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
             center
           />
