@@ -51,7 +51,7 @@ const Testimonials = () => {
         </div>
         <div className="my-12 flex w-full flex-row items-center justify-end">
           <CustomLink
-            href="/testimonials/create"
+            href="/add-testimonial"
             title="Add testimonial"
             icon={<GoPlusCircle size={30} />}
           />

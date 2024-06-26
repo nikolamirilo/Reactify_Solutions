@@ -58,7 +58,7 @@ const technologiesData: Technology[] = [
 const Technologies = () => {
   return (
     <section className="pt-16" id="technologies">
-      <div className="container flex flex-col items-center justify-center bg-dark pt-20 dark:bg-primary dark:bg-opacity-5">
+      <div className="container flex flex-col items-center justify-center rounded-xl bg-primary bg-opacity-5 pt-20">
         <SectionTitle
           title="Technologies Stack"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
