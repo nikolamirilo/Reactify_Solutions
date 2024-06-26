@@ -90,7 +90,9 @@ const SingleTechnology = ({ brand }: { brand: Technology }) => {
     <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
       <div
         rel="nofollow noreferrer"
-        className="relative flex h-32 w-32 cursor-pointer items-center justify-center opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className={`${
+          image.includes("next") && "border-2 border-white bg-white"
+        } relative flex h-32 w-32 cursor-pointer items-center justify-center rounded-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100`}
       >
         <Image src={image} alt={name} width={140} height={140} />
       </div>

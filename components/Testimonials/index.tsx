@@ -11,7 +11,6 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @TailGrids",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-01.png",
     star: 5,
   },
   {
@@ -20,7 +19,6 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @UIdeck",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-02.png",
     star: 5,
   },
   {
@@ -29,14 +27,16 @@ const testimonialData: Testimonial[] = [
     designation: "Founder @Lineicons",
     content:
       "Our members are so impressed. It's intuitive. It's clean. It's distraction free. If you're building a community.",
-    image: "/images/testimonials/auth-03.png",
     star: 5,
   },
 ];
 
 const Testimonials = () => {
   return (
-    <section className="relative z-10 bg-primary/[.03] py-16 md:py-20 lg:py-28">
+    <section
+      className="relative z-10 bg-primary/[.03] py-16 md:py-20 lg:py-28"
+      id="testimonials"
+    >
       <div className="container relative">
         <SectionTitle
           title="What Our Users Says"

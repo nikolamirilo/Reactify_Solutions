@@ -4,11 +4,25 @@ import StarRatings from "../../node_modules/react-star-ratings";
 
 const CreateTestimonial = () => {
   const [rating, setRating] = useState(0);
+  const [fullName, setFullName] = useState("");
+  const [profession, setProfession] = useState("");
+  const [testimonial, setTestimonial] = useState("");
+
+  function handleSubmit(e: any) {
+    e.preventDefault();
+    const uploadData = {
+      fullName,
+      profession,
+      rating,
+      testimonial,
+    };
+    console.log(uploadData);
+  }
   return (
     <section id="contact" className="overflow-hidden">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+          <div className="w-full max-w-[70rem] px-4">
             <div
               className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
@@ -20,7 +34,7 @@ const CreateTestimonial = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Fill form below to do it!
               </p>
-              <form>
+              <form action="submit" onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -28,12 +42,16 @@ const CreateTestimonial = () => {
                         htmlFor="name"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Full Name
+                        Your Full Name:
                       </label>
                       <input
+                        value={fullName}
+                        onChange={(e: any) => {
+                          setFullName(e.target.value);
+                        }}
                         type="text"
                         placeholder="Enter your name"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -46,21 +64,24 @@ const CreateTestimonial = () => {
                         Your Profession:
                       </label>
                       <input
+                        value={profession}
+                        onChange={(e: any) => {
+                          setProfession(e.target.value);
+                        }}
                         type="text"
                         placeholder="Enter your profession"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       />
                     </div>
                   </div>
                   <div className="mb-8 w-full px-4">
                     <StarRatings
+                      starRatedColor="#fbb040"
+                      starHoverColor="#fbb040"
+                      starDimension="30px"
                       rating={rating}
-                      starRatedColor="yellow"
-                      starHoverColor="yellow"
-                      starDimension="35px"
                       changeRating={(e: any) => {
                         setRating(e);
-                        console.log(rating);
                       }}
                       numberOfStars={5}
                       name="rating"
@@ -72,19 +93,26 @@ const CreateTestimonial = () => {
                         htmlFor="message"
                         className="mb-3 block text-sm font-medium text-dark dark:text-white"
                       >
-                        Your Testimonial
+                        Your Testimonial:
                       </label>
                       <textarea
+                        value={testimonial}
+                        onChange={(e: any) => {
+                          setTestimonial(e.target.value);
+                        }}
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
-                      Submit Ticket
+                    <button
+                      type="submit"
+                      className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                    >
+                      Submit
                     </button>
                   </div>
                 </div>
