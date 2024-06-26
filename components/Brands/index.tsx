@@ -1,5 +1,6 @@
 import { Brand } from "@/types/brand";
 import Image from "next/image";
+import SectionTitle from "../Common/SectionTitle";
 
 const brandsData: Brand[] = [
 
@@ -44,13 +45,18 @@ href: "",
 const Brands = () => {
   return (
     <section className="pt-16">
-      <div className="container">
+      <div className="container flex flex-col items-center justify-center rounded-xl bg-primary bg-opacity-5 pt-20">
+      <SectionTitle
+          title="Our Customers"
+          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          center
+        />
+
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full px-4 mx-auto">
             <div
-              className="wow fadeInUp flex items-center justify-center rounded-md bg-dark py-8 px-8 dark:bg-primary dark:bg-opacity-5 sm:px-10 md:py-[40px] md:px-[50px] xl:p-[50px] 2xl:py-[60px] 2xl:px-[70px]"
-              data-wow-delay=".1s
-              "
+              className="wow fadeInUp flex flex-wrap items-center justify-between rounded-md py-8 px-8 sm:px-10 md:py-[40px]"
+              data-wow-delay=".1s"
             >
               {brandsData.map((brand) => (
                 <SingleBrand key={brand.id} brand={brand} />
