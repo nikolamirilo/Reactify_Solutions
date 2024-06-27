@@ -27,7 +27,7 @@ const Header = () => {
 
   // submenu handler
   const [openIndex, setOpenIndex] = useState(-1);
-  const handleSubmenu = (index) => {
+  const handleSubmenu = (index: number) => {
     if (openIndex === index) {
       setOpenIndex(-1);
     } else {
@@ -54,17 +54,17 @@ const Header = () => {
                 } `}
               >
                 <Image
-                  src="/images/logo/reactify-light-trans.png"
+                  src="/images/logo/reactify.png"
                   alt="logo"
-                  width={120}
-                  height={40}
+                  width={140}
+                  height={30}
                   className="dark:hidden"
                 />
                 <Image
-                  src="/images/logo/reactify-trans.png"
+                  src="/images/logo/reactify.png"
                   alt="logo"
-                  width={120}
-                  height={40}
+                  width={140}
+                  height={30}
                   className="hidden dark:block"
                 />
               </Link>

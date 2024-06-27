@@ -3,6 +3,9 @@
 html {
   scroll-behavior: smooth !important;
 }
+:root {
+  -webkit-tap-highlight-color: transparent !important;
+}
 
 /*Scrollbar*/
 ::-webkit-scrollbar {
