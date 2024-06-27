@@ -1,25 +1,34 @@
 "use client";
 import React, { useState } from "react";
 import StarRatings from "../../node_modules/react-star-ratings";
+import { addNewTestimonial } from "@/actions";
+import { revalidateData } from "@/helpers/server";
 
 const CreateTestimonial = () => {
-  const [rating, setRating] = useState(0);
+  const [rate, setRate] = useState(0);
   const [fullName, setFullName] = useState("");
   const [profession, setProfession] = useState("");
   const [testimonial, setTestimonial] = useState("");
 
-  function handleSubmit(e: any) {
+  async function handleSubmit(e: any) {
     e.preventDefault();
-    const uploadData = {
+    const res = await addNewTestimonial(
       fullName,
       profession,
-      rating,
       testimonial,
-    };
-    console.log(uploadData);
+      rate
+    );
+    if (res) {
+      revalidateData();
+      alert("Successfully posted testimonial");
+      setFullName("");
+      setRate(0);
+      setProfession("");
+      setTestimonial("");
+    }
   }
   return (
-    <section id="contact" className="overflow-hidden">
+    <section id="contact" className="overflow-hidden pt-5 pb-16">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full max-w-[70rem] px-4">
@@ -79,9 +88,9 @@ const CreateTestimonial = () => {
                       starRatedColor="#fbb040"
                       starHoverColor="#fbb040"
                       starDimension="30px"
-                      rating={rating}
+                      rating={rate}
                       changeRating={(e: any) => {
-                        setRating(e);
+                        setRate(e);
                       }}
                       numberOfStars={5}
                       name="rating"

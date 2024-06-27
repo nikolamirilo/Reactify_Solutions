@@ -3,59 +3,58 @@ import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
 const brandsData: Brand[] = [
-
-  {  
-id: 1,
-name: "",
-href: "",  
-     image: "/images/brands/Arioso_Investment.png" 
+  {
+    id: 1,
+    name: "",
+    href: "",
+    image: "/images/brands/Arioso_Investment.png",
   },
-    {
- id: 1,
- name: "",
- href: "",   
-      image: "/images/brands/C2S.png" 
-    },
-      {
- id: 1,
- name: "",
- href: "",   
-      image: "/images/brands/Claire.png" 
-    },
-      {
- id: 1,
- name: "",
- href: "",   
-      image: "/images/brands/Montre.png" 
-    },
-      {
- id: 1,
- name: "",
- href: "",   
-      image: "/images/brands/Swapabee.jpg" 
-    },
-      {
- id: 1,
- name: "",
- href: "",   
-      image: "/images/brands/WeBuyInDubai.png"
-}];
-
+  {
+    id: 1,
+    name: "",
+    href: "",
+    image: "/images/brands/C2S.png",
+  },
+  {
+    id: 1,
+    name: "",
+    href: "",
+    image: "/images/brands/Claire.png",
+  },
+  {
+    id: 1,
+    name: "",
+    href: "",
+    image: "/images/brands/Montre.png",
+  },
+  {
+    id: 1,
+    name: "",
+    href: "",
+    image: "/images/brands/Swapabee.jpg",
+  },
+  {
+    id: 1,
+    name: "",
+    href: "",
+    image: "/images/brands/WeBuyInDubai.png",
+  },
+];
 
 const Brands = () => {
   return (
     <section className="pt-16">
       <div className="container flex flex-col items-center justify-center rounded-xl bg-primary bg-opacity-5 pt-20">
-      <SectionTitle
+        <SectionTitle
           title="Our Customers"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
         />
 
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 mx-auto">
+          <div className="mx-auto w-full px-4">
             <div
-              className="wow fadeInUp flex flex-wrap items-center justify-between rounded-md py-8 px-8 sm:px-10 md:py-[40px]"
+              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md py-8 px-8 sm:px-10 md:py-[40px]"
               data-wow-delay=".1s"
             >
               {brandsData.map((brand) => (
@@ -82,7 +81,13 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         rel="nofollow noreferrer"
         className="relative opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
       >
-        <Image src={image} alt={name} width={200} height={200} className="rounded-full" />
+        <Image
+          src={image}
+          alt={name}
+          width={200}
+          height={200}
+          className="rounded-full"
+        />
       </a>
     </div>
   );
