@@ -1,11 +1,31 @@
-import NewsLatterBox from "./NewsLatterBox";
+"use client";
+import { sendEmail } from "@/actions";
+import { fetchData } from "@/helpers/client";
+import { useState } from "react";
+
 
 const Contact = () => {
+  const [name, setName]= useState("")
+  const [message, setMessage] = useState("")
+  const [email, setEmail] = useState("")
+  
+  async function handleSubmit (e:any) {
+    e.preventDefault()
+    const res = await sendEmail({name, email, message})
+    if(res == true){
+      alert("Thank you for contact!")
+      setName("")
+      setMessage("")
+      setEmail("")
+    }else{
+    alert("Error occured, please contact support")
+    }
+  }
   return (
     <section id="contact" className="overflow-hidden pt-5 pb-16">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 lg:w-7/12 xl:w-8/12">
+          <div className="w-full px-4 max-w-[70rem]">
             <div
               className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
@@ -17,7 +37,7 @@ const Contact = () => {
               <p className="mb-12 text-base font-medium text-body-color">
                 Fill form below and we will respond in a 24 hours.
               </p>
-              <form>
+              <form action="submit" onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
                     <div className="mb-8">
@@ -28,6 +48,8 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
+                      value={name}
+                      onChange={(e:any)=>setName(e.target.value)}
                         type="text"
                         placeholder="Enter your name"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -43,6 +65,8 @@ const Contact = () => {
                         Your Email
                       </label>
                       <input
+                        value={email}
+                        onChange={(e:any)=>setEmail(e.target.value)}
                         type="email"
                         placeholder="Enter your email"
                         className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
@@ -58,15 +82,17 @@ const Contact = () => {
                         Your Message
                       </label>
                       <textarea
+                        value={message}
+                        onChange={(e:any)=>setMessage(e.target.value)}
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark dark:text-white shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+                    <button type="submit" className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
                       Submit
                     </button>
                   </div>
@@ -74,9 +100,9 @@ const Contact = () => {
               </form>
             </div>
           </div>
-          <div className="h-full w-full px-4 lg:w-5/12 xl:w-4/12">
+          {/* <div className="h-full w-full px-4 lg:w-5/12 xl:w-4/12">
             <NewsLatterBox />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>

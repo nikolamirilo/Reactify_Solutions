@@ -1,5 +1,9 @@
 "use server";
+import { resend } from "@/constants";
+import { ContactData } from "@/types";
 import { sql } from "@vercel/postgres";
+
+
 
 export async function addNewTestimonial(
   fullName: string,
@@ -44,5 +48,27 @@ export async function getAllTestimonials() {
   } catch (error: any) {
     console.log(error);
     return false;
+  }
+}
+export async function sendEmail(contactData:ContactData) {
+  const {message, email, name} = contactData
+  try{
+     const res = await resend.emails.send({
+          from: 'onboarding@resend.dev',
+          to: 'reactify.developer@gmail.com',
+          subject: 'New message from Reactify IT Solutions website',
+          html: `<div>
+          <p>Email: ${email}</p>
+          <p>Name: ${name}</p>
+          <p>Message: ${message}</p>
+          </div>`
+        });
+        console.log(res)
+        if(res.error == null){
+        return true
+        }
+  }catch(error:any){
+      console.log(error)
+      return false
   }
 }

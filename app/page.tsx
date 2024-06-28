@@ -27,17 +27,14 @@ async function Home() {
     <div className={inter.className}>
       <ScrollUp />
       <Hero />
+      <AboutSectionOne />
       <Features />
       <Technologies />
       <Video />
       <Brands />
-      <AboutSectionOne />
-      {/* <AboutSectionTwo /> */}
       <Suspense fallback="">
         <Testimonials testimonials={testimonials} />
       </Suspense>
-      <Pricing />
-      {/* <Blog /> */}
     </div>
   );
 }
