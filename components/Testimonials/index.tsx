@@ -1,4 +1,4 @@
-import { Testimonial } from "@/types/testimonial";
+import { Testimonial } from "@/types";
 import SectionTitle from "../Common/SectionTitle";
 import SingleTestimonial from "./SingleTestimonial";
 import CustomLink from "../Common/CustomLink";

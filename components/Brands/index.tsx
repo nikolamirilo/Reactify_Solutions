@@ -1,43 +1,42 @@
-import { Brand } from "@/types/brand";
+import { Brand } from "@/types";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 
 const brandsData: Brand[] = [
   {
-    id: 1,
-    name: "",
-    href: "",
-    image: "/images/brands/Arioso_Investment.png",
+    name: "Montre Shop",
+    href: "https://www.montre-shop.com/",
+    image: "/images/brands/Montre-removebg-preview.png",
   },
   {
-    id: 1,
-    name: "",
-    href: "",
-    image: "/images/brands/C2S.png",
+    name: "Beauty By Claire",
+    href: "https://beautybyclaire.rs/",
+    image: "/images/brands/Claire-removebg-preview.png",
   },
   {
-    id: 1,
-    name: "",
-    href: "",
-    image: "/images/brands/Claire.png",
+    name: "We Buy In Dubai",
+    href: "https://webuyindubai.com/",
+    image: "/images/brands/WeBuyInDubai-removebg-preview.png",
   },
   {
-    id: 1,
-    name: "",
-    href: "",
-    image: "/images/brands/Montre.png",
+    name: "Swapabee",
+    href: "https://play.google.com/store/apps/details?id=com.swapabee_20&hl=en_US&pli=1",
+    image: "/images/brands/Swapabee-removebg-preview.png",
   },
   {
-    id: 1,
-    name: "",
-    href: "",
-    image: "/images/brands/Swapabee.jpg",
+    name: "TicketFlow",
+    href: "https://ticketflow.rs/",
+    image: "/images/brands/TicketFlow-removebg-preview.png",
   },
   {
-    id: 1,
-    name: "",
-    href: "",
-    image: "/images/brands/WeBuyInDubai.png",
+    name: "Arioso Investment AG",
+    href: "https://arioso-investment-ag.netlify.app/",
+    image: "/images/brands/Arioso_Investment-removebg-preview.png",
+  },
+  {
+    name: "C2S",
+    href: "https://c2s.fonis.rs/pocetna",
+    image: "/images/brands/C2S-removebg-preview.png",
   },
 ];
 
@@ -46,7 +45,7 @@ const Brands = () => {
     <section className="pt-16">
       <div className="container flex flex-col items-center justify-center rounded-xl bg-primary bg-opacity-5 pt-20">
         <SectionTitle
-          title="Our Customers"
+          title="Our Clients"
           paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
           center
         />
@@ -54,11 +53,11 @@ const Brands = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="mx-auto w-full px-4">
             <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center rounded-md py-8 px-8 sm:px-10 md:py-[40px]"
+              className="wow fadeInUp flex flex-wrap items-center justify-center gap-y-10 rounded-md py-8 px-8 sm:px-10"
               data-wow-delay=".1s"
             >
-              {brandsData.map((brand) => (
-                <SingleBrand key={brand.id} brand={brand} />
+              {brandsData.map((brand, idx) => (
+                <SingleBrand key={idx} brand={brand} />
               ))}
             </div>
           </div>
@@ -74,7 +73,7 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, name } = brand;
 
   return (
-    <div className="mx-3 flex w-full max-w-[160px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
+    <div className="mx-3 flex w-full max-w-[180px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
       <a
         href={href}
         target="_blank"
@@ -84,9 +83,8 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
         <Image
           src={image}
           alt={name}
-          width={200}
-          height={200}
-          className="rounded-full"
+          width={160}
+          height={100}
         />
       </a>
     </div>

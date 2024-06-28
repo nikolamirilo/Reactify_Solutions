@@ -1,4 +1,4 @@
-import { Technology } from "@/types/technology";
+import { Technology } from "@/types";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
 

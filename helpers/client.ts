@@ -1,5 +1,5 @@
 import { APP_URL } from "@/constants";
-import { FetchOptions } from "@/types/helpers";
+import { FetchOptions } from "@/types";
 
 export async function fetchData(path: string, options: FetchOptions) {
   try {

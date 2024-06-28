@@ -3,3 +3,55 @@ export type ContactData = {
     email: string;
     name:string
   }
+export type Brand = {
+    name: string;
+    href: string;
+    image: string;
+  };
+export type FetchOptions = {
+    method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
+    cache?: "force-cache" | "no-cache" | "no-store";
+    body?: BodyInit;
+  };
+export type Menu = {
+    id: number;
+    title: string;
+    path?: string;
+    newTab: boolean;
+    submenu?: Menu[];
+  };
+export type Technology = {
+    id: number;
+    name: string;
+    image: string;
+  };
+export type Testimonial = {
+    id: number;
+    fullname: string;
+    rate: number;
+    content: string;
+    profession: string;
+  };
+export type Feature = {
+    id: number;
+    icon: JSX.Element;
+    title: string;
+    paragraph: string;
+  };
+  
+type Author = {
+    name: string;
+    image: string;
+    designation: string;
+  };
+  
+export type Blog = {
+    id: number;
+    title: string;
+    paragraph: string;
+    image: string;
+    author: Author;
+    tags: string[];
+    publishDate: string;
+  };
+  
