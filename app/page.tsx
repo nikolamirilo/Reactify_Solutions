@@ -4,26 +4,17 @@ import ScrollUp from "@/components/Common/ScrollUp";
 import Features from "@/components/Features";
 import Hero from "@/components/Hero";
 import Technologies from "@/components/Technologies";
-import Testimonials from "@/components/Testimonials";
-import Video from "@/components/Video";
-import { fetchData } from "@/helpers/client";
 import { Metadata } from "next";
-import { Inter } from "next/font/google";
-import { Suspense } from "react";
-
-const inter = Inter({ subsets: ["latin"] });
+import Video from "@/components/Video";
+import Testimonials from "@/components/Testimonials";
 
 export const metadata: Metadata = {
   title: "Reactify IT Solutions",
 };
 
 async function Home() {
-  const testimonials = await fetchData("/api/testimonials", {
-    method: "GET",
-    cache: "force-cache",
-  });
   return (
-    <div className={inter.className}>
+    <>
       <ScrollUp />
       <Hero />
       <AboutSectionOne />
@@ -31,10 +22,8 @@ async function Home() {
       <Technologies />
       <Video />
       <Brands />
-      <Suspense fallback="">
-        <Testimonials testimonials={testimonials} />
-      </Suspense>
-    </div>
+      {/* <Testimonials/> */}
+    </>
   );
 }
 export default Home;
