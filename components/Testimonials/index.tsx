@@ -5,7 +5,7 @@ import CustomLink from "../Common/CustomLink";
 import { GoPlusCircle } from "react-icons/go";
 import { fetchData } from "@/helpers/client";
 
-const Testimonials = async () => {
+const Testimonials:any = async () => {
   const testimonials = await fetchData("/api/testimonials", {
     method: "GET",
     cache: "force-cache",

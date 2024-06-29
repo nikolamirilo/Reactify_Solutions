@@ -22,7 +22,7 @@ async function Home() {
       <Technologies />
       <Video />
       <Brands />
-      {/* <Testimonials/> */}
+      <Testimonials/>
     </>
   );
 }
