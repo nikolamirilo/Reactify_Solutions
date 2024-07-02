@@ -1,44 +1,9 @@
 import { Brand } from "@/types";
 import Image from "next/image";
 import SectionTitle from "../Common/SectionTitle";
+import { brandsData } from "@/constants";
 
-const brandsData: Brand[] = [
-  {
-    name: "Montre Shop",
-    href: "https://www.montre-shop.com/",
-    image: "/images/brands/Montre-removebg-preview.png",
-  },
-  {
-    name: "Beauty By Claire",
-    href: "https://beautybyclaire.rs/",
-    image: "/images/brands/Claire-removebg-preview.png",
-  },
-  {
-    name: "We Buy In Dubai",
-    href: "https://webuyindubai.com/",
-    image: "/images/brands/WeBuyInDubai-removebg-preview.png",
-  },
-  {
-    name: "Swapabee",
-    href: "https://play.google.com/store/apps/details?id=com.swapabee_20&hl=en_US&pli=1",
-    image: "/images/brands/Swapabee-removebg-preview.png",
-  },
-  {
-    name: "TicketFlow",
-    href: "https://ticketflow.rs/",
-    image: "/images/brands/TicketFlow-removebg-preview.png",
-  },
-  {
-    name: "Arioso Investment AG",
-    href: "https://arioso-investment-ag.netlify.app/",
-    image: "/images/brands/Arioso_Investment-removebg-preview.png",
-  },
-  {
-    name: "C2S",
-    href: "https://c2s.fonis.rs/pocetna",
-    image: "/images/brands/C2S-removebg-preview.png",
-  },
-];
+
 
 const Brands = () => {
   return (
@@ -53,7 +18,7 @@ const Brands = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="mx-auto w-full px-4">
             <div
-              className="wow fadeInUp flex flex-wrap items-center justify-center gap-y-10 rounded-md py-8 px-8 sm:px-10"
+              className="wow fadeInUp flex flex-wrap items-center justify-around sm:justify-center gap-y-5 rounded-md px-8 sm:px-10 md:px-[50px] xl:p-[50px] 2xl:px-[70px]"
               data-wow-delay=".1s"
             >
               {brandsData.map((brand, idx) => (
@@ -73,12 +38,12 @@ const SingleBrand = ({ brand }: { brand: Brand }) => {
   const { href, image, name } = brand;
 
   return (
-    <div className="mx-3 flex w-full max-w-[180px] items-center justify-center py-[15px] sm:mx-4 lg:max-w-[130px] xl:mx-6 xl:max-w-[150px] 2xl:mx-8 2xl:max-w-[160px]">
+    <div className="mx-3 w-fit flex items-center justify-center py-[15px] sm:mx-4 xl:mx-6 2xl:mx-8">
       <a
         href={href}
         target="_blank"
         rel="nofollow noreferrer"
-        className="relative opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
+        className="relative flex max-w-[7rem] lg:max-w-[8rem] 2xl:max-w-[10rem] cursor-pointer items-center justify-center rounded-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100"
       >
         <Image
           src={image}
