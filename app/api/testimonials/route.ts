@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { sql } from "@vercel/postgres";
 
+export const dynamic = "force-dynamic"
+
 export async function GET() {
   await sql.query({
     text: `CREATE TABLE IF NOT EXISTS testimonials(

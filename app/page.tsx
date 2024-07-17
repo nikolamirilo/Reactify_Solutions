@@ -20,7 +20,7 @@ async function Home() {
       <AboutSectionOne />
       <Features />
       <Technologies />
-      <Video />
+      {/* <Video /> */}
       <Brands />
       <Testimonials/>
     </>
