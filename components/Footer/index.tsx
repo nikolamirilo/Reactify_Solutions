@@ -2,7 +2,7 @@ const Footer = () => {
   return (
 <footer className="flex justify-center items-center bg-base-300 text-base-content p-4 wow fadeInUp relative z-10 bg-primary bg-opacity-5 py-5">
   <aside>
-    <p>Copyright ©{new Date().getFullYear()} - All rights reserved by Reactify IT Solutions</p>
+    <p>Copyright ©{new Date().getFullYear()} - All rights reserved by Reactify Solutions</p>
   </aside>
 </footer>
   );

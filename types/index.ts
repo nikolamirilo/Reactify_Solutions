@@ -12,6 +12,7 @@ export type FetchOptions = {
     method: "GET" | "POST" | "PUT" | "DELETE" | "PATCH";
     cache?: "force-cache" | "no-cache" | "no-store";
     body?: BodyInit;
+    revalidate?: number
   };
 export type Menu = {
     id: number;
@@ -32,7 +33,7 @@ export type Testimonial = {
     content: string;
     profession: string;
   };
-export type Feature = {
+export type Service = {
     id: number;
     icon: JSX.Element;
     title: string;

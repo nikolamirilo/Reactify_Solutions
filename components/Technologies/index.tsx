@@ -11,7 +11,7 @@ const Technologies = () => {
       <div className="container flex flex-col items-center justify-center rounded-xl bg-primary bg-opacity-5 pt-20">
         <SectionTitle
           title="Technologies Stack"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          paragraph="We continuously strive to stay at the forefront of technology, always adopting the latest advancements to deliver the best solutions."
           center
         />
         <div className="-mx-4 flex flex-wrap">
@@ -40,9 +40,8 @@ const SingleTechnology = ({ brand }: { brand: Technology }) => {
     <div className="mx-3 w-fit flex items-center justify-center py-[15px] sm:mx-4 xl:mx-6 2xl:mx-8">
       <div
         rel="nofollow noreferrer"
-        className={`${
-          image.includes("next") && "border-2 border-white bg-white"
-        } relative flex max-w-[6rem] lg:max-w-[8rem] 2xl:max-w-[10rem] cursor-pointer items-center justify-center rounded-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100`}
+        className={`${image.includes("next") && "border-2 border-white bg-white"
+          } relative flex max-w-[6rem] lg:max-w-[8rem] 2xl:max-w-[10rem] cursor-pointer items-center justify-center rounded-full opacity-70 grayscale transition hover:opacity-100 hover:grayscale-0 dark:opacity-60 dark:hover:opacity-100`}
       >
         <Image src={image} alt={name} width={140} height={140} />
       </div>

@@ -15,11 +15,11 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                 Reactify IT Solutions - Drive your technological growth
+                 Reactify Solutions - Drive your technological growth
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                 
-                Reactify IT Solutions offers top-tier web development, SEO, and digital marketing services. Our expert team uses the latest technologies to build dynamic, user-friendly websites that boost your online presence and drive growth. We integrate AI insights to optimize your site for search engines and create effective marketing campaigns, ensuring maximum visibility and engagement. For robust web development, strategic SEO, and innovative marketing solutions, trust Reactify IT Solutions to empower your digital success.
+                We provide cutting-edge digital solutions by utilizing the latest technologies to develop innovative and intuitive software that enhances your online presence and drives substantial growth. Integrating AI insights, we optimize your site for search engines and craft impactful marketing campaigns to maximize visibility and engagement.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

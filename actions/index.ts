@@ -56,7 +56,7 @@ export async function sendEmail(contactData:ContactData) {
      const res = await resend.emails.send({
           from: 'onboarding@resend.dev',
           to: 'reactify.developer@gmail.com',
-          subject: 'New message from Reactify IT Solutions website',
+          subject: 'New message from Reactify Solutions website',
           html: `<div>
           <p>Email: ${email}</p>
           <p>Name: ${name}</p>

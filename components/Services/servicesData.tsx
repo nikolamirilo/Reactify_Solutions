@@ -1,6 +1,6 @@
-import { Feature } from "@/types";
+import { Service } from "@/types";
 
-const featuresData: Feature[] = [
+const servicesData: Service[] = [
   {
     id: 1,
     icon: (
@@ -89,4 +89,4 @@ const featuresData: Feature[] = [
     paragraph: "Our business consulting services provide expert advice to help you optimize your operations, improve efficiency, and drive growth. We work with you to develop strategies that align with your business goals and ensure long-term success.",
   },
 ];
-export default featuresData;
+export default servicesData;

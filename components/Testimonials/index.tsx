@@ -8,12 +8,11 @@ import { fetchData } from "@/helpers/client";
 const Testimonials:any = async () => {
   const testimonials = await fetchData("/api/testimonials", {
     method: "GET",
-    cache: "force-cache",
   });
   if(testimonials)
     return (
       <section
-        className="relative z-10 bg-primary/[.03] py-16 md:py-20 lg:py-28"
+        className="relative z-10 bg-primary/[.03] mt-16 py-16 md:py-20 lg:py-28 border-b border-t border-body-color/[.15] pb-16 dark:border-white/[.15] md:pb-20 lg:pb-28"
         id="testimonials"
       >
         <div className="container relative">
@@ -24,7 +23,7 @@ const Testimonials:any = async () => {
           />
 
           <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-            {testimonials
+            {testimonials.length > 0
               ? testimonials?.map((testimonial: Testimonial) => (
                   <SingleTestimonial
                     key={testimonial.id}
@@ -33,6 +32,7 @@ const Testimonials:any = async () => {
                 ))
               : null}
           </div>
+          {testimonials.length < 1 && <div className="text-base !leading-relaxed text-body-color text-center w-full md:text-lg mx-auto">There are currently no testimonials. Be first one to add it!</div>}
           <div className="my-12 flex w-full flex-row items-center justify-end">
             <CustomLink
               href="/add-testimonial"

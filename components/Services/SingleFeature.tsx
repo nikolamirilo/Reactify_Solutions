@@ -1,7 +1,7 @@
-import { Feature } from "@/types";
+import { Service } from "@/types";
 
-const SingleFeature = ({ feature }: { feature: Feature }) => {
-  const { icon, title, paragraph } = feature;
+const SingleService = ({ service }: { service: Service }) => {
+  const { icon, title, paragraph } = service;
   return (
     <div className="w-full">
       <div className="wow fadeInUp flex flex-col justify-center items-center md:items-start" data-wow-delay=".15s">
@@ -19,4 +19,4 @@ const SingleFeature = ({ feature }: { feature: Feature }) => {
   );
 };
 
-export default SingleFeature;
+export default SingleService;

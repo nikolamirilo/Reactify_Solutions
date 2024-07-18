@@ -3,11 +3,12 @@ import { FetchOptions } from "@/types";
 
 export async function fetchData(path: string, options: FetchOptions) {
   try {
-    const { method, cache, body } = options;
+    const { method, cache, body, revalidate } = options;
     const res = await fetch(`${APP_URL}${path}`, {
       method,
       cache: cache || "force-cache",
       body,
+      next: {revalidate},
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
