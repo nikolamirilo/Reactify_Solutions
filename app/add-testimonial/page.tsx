@@ -11,7 +11,7 @@ const page = () => {
     <>
       <Breadcrumb
         pageName="Add Testimonial"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="Share your thoughts and experiences with us to help improve our services. Together, we can continue to grow and deliver exceptional experiences."
       />
       <CreateTestimonial />
     </>

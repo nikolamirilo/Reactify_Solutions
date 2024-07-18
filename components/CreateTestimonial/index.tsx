@@ -37,12 +37,6 @@ const CreateTestimonial = () => {
               data-wow-delay=".15s
             "
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                You want to leave a testimonial of your impression?
-              </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
-                Fill form below to do it!
-              </p>
               <form action="submit" onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">

@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-<footer className="flex justify-center items-center bg-base-300 text-base-content p-4 wow fadeInUp relative z-10 bg-primary bg-opacity-5 py-5">
+<footer className="flex justify-center items-center bg-base-300 text-base-content p-4 wow fadeInUp relative z-10 bg-primary bg-opacity-5 py-5 border-body-color/[.15] dark:border-white/[.15] border-b border-t">
   <aside>
     <p>Copyright ©{new Date().getFullYear()} - All rights reserved by Reactify Solutions</p>
   </aside>
