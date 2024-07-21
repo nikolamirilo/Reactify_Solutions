@@ -3,8 +3,6 @@ import { resend } from "@/constants";
 import { ContactData } from "@/types";
 import { sql } from "@vercel/postgres";
 
-
-
 export async function addNewTestimonial(
   fullName: string,
   profession: string,

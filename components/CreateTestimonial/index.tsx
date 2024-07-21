@@ -8,14 +8,14 @@ const CreateTestimonial = () => {
   const [rate, setRate] = useState(0);
   const [fullName, setFullName] = useState("");
   const [profession, setProfession] = useState("");
-  const [testimonial, setTestimonial] = useState("");
+  const [content, setContent] = useState("");
 
   async function handleSubmit(e: any) {
     e.preventDefault();
     const res = await addNewTestimonial(
       fullName,
       profession,
-      testimonial,
+      content,
       rate
     );
     if (res) {
@@ -24,7 +24,7 @@ const CreateTestimonial = () => {
       setFullName("");
       setRate(0);
       setProfession("");
-      setTestimonial("");
+      setContent("");
     }
   }
   return (
@@ -99,9 +99,9 @@ const CreateTestimonial = () => {
                         Your Testimonial:
                       </label>
                       <textarea
-                        value={testimonial}
+                        value={content}
                         onChange={(e: any) => {
-                          setTestimonial(e.target.value);
+                          setContent(e.target.value);
                         }}
                         name="message"
                         rows={5}
