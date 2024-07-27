@@ -18,7 +18,7 @@ const Testimonials:any = async () => {
         <div className="container relative">
           <SectionTitle
             title="What Our Customers said"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="At Reactify Solutions, client satisfaction is our top priority. Our customers appreciate our dedication to delivering high-quality digital solutions and our commitment to exceeding expectations. Here’s what some of our clients have to say about working with us."
             center
           />
 

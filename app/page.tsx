@@ -1,5 +1,5 @@
 import AboutSectionOne from "@/components/About/AboutSectionOne";
-import Brands from "@/components/Brands";
+import Clients from "@/components/Clients";
 import ScrollUp from "@/components/Common/ScrollUp";
 import Services from "@/components/Services";
 import Hero from "@/components/Hero";
@@ -20,7 +20,7 @@ async function Home() {
       <Services />
       <Technologies />
       {/* <Video /> */}
-      <Brands />
+      <Clients />
       <Testimonials/>
     </>
   );

@@ -3,7 +3,7 @@ export type ContactData = {
     email: string;
     name:string
   }
-export type Brand = {
+export type Client = {
     name: string;
     href: string;
     image: string;

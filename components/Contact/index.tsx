@@ -35,7 +35,7 @@ const Contact = () => {
                 Want to contact us?
               </h2>
               <p className="mb-12 text-base font-medium text-body-color">
-                Fill form below and we will respond in a 24 hours.
+              We'd love to hear from you! Simply fill out the form below, and one of our team members will respond within 24 hours. Whether you have questions, need assistance, or want to learn more about our services, we're here to help.
               </p>
               <form action="submit" onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">

@@ -1,4 +1,4 @@
-import { Brand, Technology } from "@/types";
+import { Client, Technology } from "@/types";
 import { Resend } from "resend";
 
 export const APP_URL = process.env.APP_URL!;
@@ -58,7 +58,7 @@ export const technologiesData: Technology[] = [
   ];
   
 
- export const brandsData: Brand[] = [
+ export const clientsData: Client[] = [
     {
       name: "Montre Shop",
       href: "https://www.montre-shop.com/",

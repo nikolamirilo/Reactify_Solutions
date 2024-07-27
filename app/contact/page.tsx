@@ -11,8 +11,8 @@ const ContactPage = () => {
   return (
     <>
       <Breadcrumb
-        pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        pageName="Contact Us"
+        description="At Reactify Solutions, we're always here to help you with your digital needs. Whether you have a question, need support, or want to learn more about how we can assist you, please don't hesitate to reach out."
       />
 
       <Contact />
