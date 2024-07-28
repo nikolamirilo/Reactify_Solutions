@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
 import { sql } from "@vercel/postgres";
+import { revalidateData } from "@/helpers/server";
 
 export const dynamic = "force-dynamic"
 
@@ -16,5 +17,6 @@ export async function GET() {
   const testimonials = await sql.query({
     text: `SELECT * FROM testimonials`,
   });
+  revalidateData()
   return NextResponse.json(testimonials.rows);
 }
