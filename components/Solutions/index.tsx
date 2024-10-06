@@ -1,7 +1,5 @@
 "use client";
 import SectionTitle from "../Common/SectionTitle";
-import "swiper/css";
-import { useRef } from "react";
 import { Carousel, IconButton } from "@material-tailwind/react";
 import Image from "next/image";
 import {
@@ -14,6 +12,7 @@ const Solutions = () => {
     "https://th.bing.com/th/id/R.7cb154c23e8d0d1a8aee715f841462d7?rik=qxar8HS8J%2fDRjw&pid=ImgRaw&r=0",
     "https://th.bing.com/th/id/R.8932b66db42f6a7808f50ee11b5d47bf?rik=Hk8al53z6SzkHg&pid=ImgRaw&r=0",
   ];
+  
   return (
     <>
       <section
