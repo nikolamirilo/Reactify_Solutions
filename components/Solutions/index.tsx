@@ -18,7 +18,7 @@ const Solutions = () => {
     <>
       <section
         id="services"
-        className="border-b border-textColor/[.15] bg-primary/[.03] py-16 dark:border-white/[.15] md:py-20 lg:py-28"
+        className="bg-primaryColor/[.03] border-b border-textColor/[.15] py-16 dark:border-white/[.15] md:py-20 lg:py-28"
       >
         <div className="container flex flex-col items-center justify-center">
           <SectionTitle
@@ -36,7 +36,7 @@ const Solutions = () => {
                 color="white"
                 size="lg"
                 onClick={handlePrev}
-                className="!absolute top-2/4 left-4 -translate-y-2/4 rounded-full bg-primary hover:bg-primary"
+                className="bg-primaryColor hover:bg-primaryColor !absolute top-2/4 left-4 -translate-y-2/4 rounded-full"
               >
                 <MdOutlineKeyboardArrowLeft size={45} />
               </IconButton>
@@ -47,7 +47,7 @@ const Solutions = () => {
                 color="white"
                 size="lg"
                 onClick={handleNext}
-                className="!absolute top-2/4 !right-4 -translate-y-2/4 rounded-full bg-primary hover:bg-primary"
+                className="bg-primaryColor hover:bg-primaryColor !absolute top-2/4 !right-4 -translate-y-2/4 rounded-full"
               >
                 <MdOutlineKeyboardArrowRight size={45} />
               </IconButton>
@@ -59,7 +59,9 @@ const Solutions = () => {
                   <span
                     key={i}
                     className={`block h-1 cursor-pointer rounded-2xl transition-all content-[''] ${
-                      activeIndex === i ? "w-8 bg-primary" : "w-4 bg-gray-400"
+                      activeIndex === i
+                        ? "bg-primaryColor w-8"
+                        : "w-4 bg-gray-400"
                     }`}
                     onClick={() => setActiveIndex(i)}
                   />

@@ -78,7 +78,7 @@ const Header = () => {
                   onClick={navbarToggleHandler}
                   id="navbarToggler"
                   aria-label="Mobile Menu"
-                  className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
+                  className="ring-primaryColor absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] focus:ring-2 lg:hidden"
                 >
                   <span
                     className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
@@ -111,7 +111,7 @@ const Header = () => {
                         <li key={menuItem.id} className="group relative">
                           <Link
                             href={menuItem.path}
-                            className={`flex py-2 text-base text-dark transition-all ease-in hover:!text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
+                            className={`hover:!text-primaryColor flex py-2 text-base text-dark transition-all ease-in dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
                           >
                             {menuItem.title}
                           </Link>
@@ -124,7 +124,7 @@ const Header = () => {
                           <li key={menuItem.id} className="group relative">
                             <Link
                               href={menuItem.path}
-                              className={`flex py-2 text-base text-dark transition-all ease-in hover:!text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
+                              className={`hover:!text-primaryColor flex py-2 text-base text-dark transition-all ease-in dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
                             >
                               {menuItem.title}
                             </Link>

@@ -28,13 +28,13 @@ const Breadcrumb = ({
                   <li className="flex items-center">
                     <Link
                       href="/"
-                      className="pr-1 text-base font-medium text-textColor hover:text-primary"
+                      className="hover:text-primaryColor pr-1 text-base font-medium text-textColor"
                     >
                       Home
                     </Link>
                     <span className="mr-3 block h-2 w-2 rotate-45 border-t-2 border-r-2 border-textColor"></span>
                   </li>
-                  <li className="text-base font-medium text-primary">
+                  <li className="text-primaryColor text-base font-medium">
                     {pageName}
                   </li>
                 </ul>

@@ -91,7 +91,7 @@ const BlogSidebarPage = () => {
                   <div className="mb-5">
                     <a
                       href="#0"
-                      className="inline-flex items-center justify-center rounded-full bg-primary py-2 px-4 text-sm font-semibold text-white"
+                      className="bg-primaryColor inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold text-white"
                     >
                       Design
                     </a>
@@ -118,7 +118,7 @@ const BlogSidebarPage = () => {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis enim lobortis scelerisque fermentum. Neque
                     sodales ut etiam sit amet. Ligula ullamcorper
-                    <strong className="text-primary dark:text-white">
+                    <strong className="text-primaryColor dark:text-white">
                       {" "}
                       malesuada{" "}
                     </strong>
@@ -128,7 +128,7 @@ const BlogSidebarPage = () => {
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-textColor sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Semper auctor neque vitae tempus quam pellentesque nec.
-                    <span className="text-primary underline dark:text-white">
+                    <span className="text-primaryColor underline dark:text-white">
                       {" "}
                       Amet dictum sit amet justo{" "}
                     </span>
@@ -158,7 +158,7 @@ const BlogSidebarPage = () => {
                       Ligula ullamcorper malesuada proin
                     </li>
                   </ul>
-                  <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
+                  <div className="bg-primaryColor relative z-10 mb-10 overflow-hidden rounded-md bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-textColor">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod incididunt utionals labore et dolore magna
@@ -335,14 +335,14 @@ const BlogSidebarPage = () => {
               </div>
             </div>
             <div className="w-full px-4 lg:w-4/12">
-              <div className="mt-12 mb-10 rounded-md bg-primary bg-opacity-5 p-6 dark:bg-opacity-5 lg:mt-0">
+              <div className="bg-primaryColor mt-12 mb-10 rounded-md bg-opacity-5 p-6 dark:bg-opacity-5 lg:mt-0">
                 <form className="flex items-center justify-between">
                   <input
                     type="text"
                     placeholder="Search here..."
-                    className="palceholder-textColor mr-5 w-full rounded-md border border-transparent py-3 px-5 text-base font-medium text-textColor outline-none focus:border-primary dark:bg-white dark:bg-opacity-10"
+                    className="palceholder-textColor focus:border-primaryColor mr-5 w-full rounded-md border border-transparent py-3 px-5 text-base font-medium text-textColor outline-none dark:bg-white dark:bg-opacity-10"
                   />
-                  <button className="flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-md bg-primary text-white">
+                  <button className="bg-primaryColor flex h-[50px] w-full max-w-[50px] items-center justify-center rounded-md text-white">
                     <svg
                       width="20"
                       height="18"
@@ -358,7 +358,7 @@ const BlogSidebarPage = () => {
                   </button>
                 </form>
               </div>
-              <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
+              <div className="bg-primaryColor mb-10 rounded-md bg-opacity-5 dark:bg-opacity-10">
                 <h3 className="border-b border-textColor border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Related Posts
                 </h3>
@@ -389,7 +389,7 @@ const BlogSidebarPage = () => {
                   </li>
                 </ul>
               </div>
-              <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
+              <div className="bg-primaryColor mb-10 rounded-md bg-opacity-5 dark:bg-opacity-10">
                 <h3 className="border-b border-textColor border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Popular Category
                 </h3>
@@ -397,7 +397,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-textColor hover:text-primary"
+                      className="hover:text-primaryColor mb-3 inline-block text-base font-medium text-textColor"
                     >
                       Tailwind Templates
                     </a>
@@ -405,7 +405,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-textColor hover:text-primary"
+                      className="hover:text-primaryColor mb-3 inline-block text-base font-medium text-textColor"
                     >
                       Landing page
                     </a>
@@ -413,7 +413,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-textColor hover:text-primary"
+                      className="hover:text-primaryColor mb-3 inline-block text-base font-medium text-textColor"
                     >
                       Reactify Solutions
                     </a>
@@ -421,7 +421,7 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-textColor hover:text-primary"
+                      className="hover:text-primaryColor mb-3 inline-block text-base font-medium text-textColor"
                     >
                       Business
                     </a>
@@ -429,14 +429,14 @@ const BlogSidebarPage = () => {
                   <li>
                     <a
                       href="#0"
-                      className="mb-3 inline-block text-base font-medium text-textColor hover:text-primary"
+                      className="hover:text-primaryColor mb-3 inline-block text-base font-medium text-textColor"
                     >
                       Multipurpose
                     </a>
                   </li>
                 </ul>
               </div>
-              <div className="mb-10 rounded-md bg-primary bg-opacity-5 dark:bg-opacity-10">
+              <div className="bg-primaryColor mb-10 rounded-md bg-opacity-5 dark:bg-opacity-10">
                 <h3 className="border-b border-textColor border-opacity-10 py-4 px-8 text-lg font-semibold text-black dark:border-white dark:border-opacity-10 dark:text-white">
                   Popular Tags
                 </h3>

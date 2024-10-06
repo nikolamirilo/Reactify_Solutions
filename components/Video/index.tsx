@@ -29,7 +29,7 @@ const Video = () => {
                 <div className="absolute top-0 right-0 flex h-full w-full items-center justify-center">
                   <button
                     onClick={() => setOpen(true)}
-                    className="flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 text-primary transition hover:bg-opacity-100"
+                    className="text-primaryColor flex h-[70px] w-[70px] items-center justify-center rounded-full bg-white bg-opacity-75 transition hover:bg-opacity-100"
                   >
                     <svg
                       width="16"
@@ -57,7 +57,13 @@ const Video = () => {
       />
 
       <div className="absolute bottom-0 left-0 right-0 z-[-1]">
-        <Image src="/images/video/shape.svg" alt="shape" className="w-full" width={200} height={100}/>
+        <Image
+          src="/images/video/shape.svg"
+          alt="shape"
+          className="w-full"
+          width={200}
+          height={100}
+        />
       </div>
     </section>
   );

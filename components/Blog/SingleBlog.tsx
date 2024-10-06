@@ -11,7 +11,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
         data-wow-delay=".1s"
       >
         <Link href="/" className="relative block h-[220px] w-full">
-          <span className="absolute top-6 right-6 z-20 inline-flex items-center justify-center rounded-full bg-primary py-2 px-4 text-sm font-semibold capitalize text-white">
+          <span className="bg-primaryColor absolute top-6 right-6 z-20 inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold capitalize text-white">
             {tags[0]}
           </span>
           <Image src={image} alt="image" fill />
@@ -20,7 +20,7 @@ const SingleBlog = ({ blog }: { blog: Blog }) => {
           <h3>
             <Link
               href="/"
-              className="mb-4 block text-xl font-bold text-black hover:text-primary dark:text-white dark:hover:text-primary sm:text-2xl"
+              className="hover:text-primaryColor dark:hover:text-primaryColor mb-4 block text-xl font-bold text-black dark:text-white sm:text-2xl"
             >
               {title}
             </Link>

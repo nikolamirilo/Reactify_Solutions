@@ -1,7 +1,7 @@
 const NewsLatterBox = () => {
   return (
     <div
-      className="wow fadeInUp relative z-10 h-full rounded-md bg-primary/[3%] p-8 dark:bg-primary/10 sm:p-11 lg:p-8 xl:p-11"
+      className="wow fadeInUp bg-primaryColor/[3%] dark:bg-primaryColor/10 relative z-10 h-full rounded-md p-8 sm:p-11 lg:p-8 xl:p-11"
       data-wow-delay=".2s"
     >
       <h3 className="mb-4 text-2xl font-bold leading-tight text-black dark:text-white">
@@ -16,18 +16,18 @@ const NewsLatterBox = () => {
           type="text"
           name="name"
           placeholder="Enter your name"
-          className="mb-4 w-full rounded-md border border-textColor border-opacity-10 py-3 px-6 text-base font-medium text-textColor placeholder-textColor outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="focus:border-primaryColor mb-4 w-full rounded-md border border-textColor border-opacity-10 py-3 px-6 text-base font-medium text-textColor placeholder-textColor outline-none focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
         <input
           type="email"
           name="email"
           placeholder="Enter your email"
-          className="mb-4 w-full rounded-md border border-textColor border-opacity-10 py-3 px-6 text-base font-medium text-textColor placeholder-textColor outline-none focus:border-primary focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
+          className="focus:border-primaryColor mb-4 w-full rounded-md border border-textColor border-opacity-10 py-3 px-6 text-base font-medium text-textColor placeholder-textColor outline-none focus:border-opacity-100 focus-visible:shadow-none dark:border-white dark:border-opacity-10 dark:bg-[#242B51] focus:dark:border-opacity-50"
         />
         <input
           type="submit"
           value="Subscribe"
-          className="duration-80 mb-4 w-full cursor-pointer rounded-md border border-transparent bg-primary py-3 px-6 text-center text-base font-medium text-white outline-none transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp focus-visible:shadow-none"
+          className="duration-80 bg-primaryColor mb-4 w-full cursor-pointer rounded-md border border-transparent py-3 px-6 text-center text-base font-medium text-white outline-none transition ease-in-out hover:bg-opacity-80 hover:shadow-signUp focus-visible:shadow-none"
         />
         <p className="text-center text-base font-medium leading-relaxed text-textColor">
           No spam guaranteed, So please don’t send any spam mail.

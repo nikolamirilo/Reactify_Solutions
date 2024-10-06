@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="bg-base-300 text-base-content wow fadeInUp relative z-10 flex items-center justify-center border-b border-t border-textColor/[.15] bg-primary bg-opacity-5 p-4 py-5 dark:border-white/[.15]">
+    <footer className="bg-base-300 text-base-content wow fadeInUp bg-primaryColor relative z-10 flex items-center justify-center border-b border-t border-textColor/[.15] bg-opacity-5 p-4 py-5 dark:border-white/[.15]">
       <aside>
         <p className="text-center">
           Copyright ©{new Date().getFullYear()} - All rights reserved by
@@ -19,7 +19,7 @@ export default Footer;
 //   return (
 //     <>
 //       <footer
-//         className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+//         className="wow fadeInUp relative z-10 bg-primaryColor bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
 //         data-wow-delay=".1s"
 //       >
 //         <div className="container">
@@ -50,7 +50,7 @@ export default Footer;
 //                   <a
 //                     href="/"
 //                     aria-label="social-link"
-//                     className="mr-6 text-[#CED3F6] hover:text-primary"
+//                     className="mr-6 text-[#CED3F6] hover:text-primaryColor"
 //                   >
 //                     <svg
 //                       width="9"
@@ -64,7 +64,7 @@ export default Footer;
 //                   <a
 //                     href="/"
 //                     aria-label="social-link"
-//                     className="mr-6 text-[#CED3F6] hover:text-primary"
+//                     className="mr-6 text-[#CED3F6] hover:text-primaryColor"
 //                   >
 //                     <svg
 //                       width="19"
@@ -78,7 +78,7 @@ export default Footer;
 //                   <a
 //                     href="/"
 //                     aria-label="social-link"
-//                     className="mr-6 text-[#CED3F6] hover:text-primary"
+//                     className="mr-6 text-[#CED3F6] hover:text-primaryColor"
 //                   >
 //                     <svg
 //                       width="18"
@@ -92,7 +92,7 @@ export default Footer;
 //                   <a
 //                     href="/"
 //                     aria-label="social-link"
-//                     className="mr-6 text-[#CED3F6] hover:text-primary"
+//                     className="mr-6 text-[#CED3F6] hover:text-primaryColor"
 //                   >
 //                     <svg
 //                       width="17"
@@ -116,7 +116,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/about"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       About{" "}
@@ -125,7 +125,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/contact"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       Contact{" "}
@@ -134,7 +134,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       Home{" "}
@@ -153,7 +153,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       TOS{" "}
@@ -162,7 +162,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       Privacy Policy{" "}
@@ -171,7 +171,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       Refund Policy{" "}
@@ -190,7 +190,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       Open Support Ticket{" "}
@@ -199,7 +199,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       Terms of Use{" "}
@@ -208,7 +208,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primaryColor"
 //                     >
 //                       {" "}
 //                       About{" "}

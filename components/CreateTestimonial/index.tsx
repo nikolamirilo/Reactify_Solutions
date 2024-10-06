@@ -12,12 +12,7 @@ const CreateTestimonial = () => {
 
   async function handleSubmit(e: any) {
     e.preventDefault();
-    const res = await addNewTestimonial(
-      fullName,
-      profession,
-      content,
-      rate
-    );
+    const res = await addNewTestimonial(fullName, profession, content, rate);
     if (res) {
       revalidateData();
       alert("Successfully posted testimonial");
@@ -33,7 +28,7 @@ const CreateTestimonial = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full max-w-[70rem] px-4">
             <div
-              className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp bg-primaryColor/[3%] mb-12 rounded-md py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
             "
             >
@@ -54,7 +49,7 @@ const CreateTestimonial = () => {
                         }}
                         type="text"
                         placeholder="Enter your name"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -73,7 +68,7 @@ const CreateTestimonial = () => {
                         }}
                         type="text"
                         placeholder="Enter your profession"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -106,14 +101,14 @@ const CreateTestimonial = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
                     <button
                       type="submit"
-                      className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                      className="bg-primaryColor rounded-md py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
                     >
                       Submit
                     </button>

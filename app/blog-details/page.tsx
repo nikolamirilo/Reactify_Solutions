@@ -89,7 +89,7 @@ const BlogDetailsPage = () => {
                   <div className="mb-5">
                     <a
                       href="#0"
-                      className="inline-flex items-center justify-center rounded-full bg-primary py-2 px-4 text-sm font-semibold text-white"
+                      className="bg-primaryColor inline-flex items-center justify-center rounded-full py-2 px-4 text-sm font-semibold text-white"
                     >
                       Design
                     </a>
@@ -116,7 +116,7 @@ const BlogDetailsPage = () => {
                     do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua. Quis enim lobortis scelerisque fermentum. Neque
                     sodales ut etiam sit amet. Ligula ullamcorper
-                    <strong className="text-primary dark:text-white">
+                    <strong className="text-primaryColor dark:text-white">
                       malesuada
                     </strong>
                     proin libero nunc consequat interdum varius. Quam
@@ -125,7 +125,7 @@ const BlogDetailsPage = () => {
                   </p>
                   <p className="mb-10 text-base font-medium leading-relaxed text-textColor sm:text-lg sm:leading-relaxed lg:text-base lg:leading-relaxed xl:text-lg xl:leading-relaxed">
                     Semper auctor neque vitae tempus quam pellentesque nec.
-                    <span className="text-primary underline dark:text-white">
+                    <span className="text-primaryColor underline dark:text-white">
                       Amet dictum sit amet justo
                     </span>
                     donec enim diam. Varius sit amet mattis vulputate enim nulla
@@ -154,7 +154,7 @@ const BlogDetailsPage = () => {
                       Ligula ullamcorper malesuada proin
                     </li>
                   </ul>
-                  <div className="relative z-10 mb-10 overflow-hidden rounded-md bg-primary bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
+                  <div className="bg-primaryColor relative z-10 mb-10 overflow-hidden rounded-md bg-opacity-10 p-8 md:p-9 lg:p-8 xl:p-9">
                     <p className="text-center text-base font-medium italic text-textColor">
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                       sed do eiusmod incididunt utionals labore et dolore magna
