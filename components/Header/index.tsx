@@ -13,7 +13,7 @@ const Header = () => {
     setNavbarOpen(!navbarOpen);
   };
 
-  const path = usePathname()
+  const path = usePathname();
 
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
@@ -98,38 +98,43 @@ const Header = () => {
                 </button>
                 <nav
                   id="navbarCollapse"
-                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white py-4 px-6 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+                  className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-textColor/50 bg-white py-4 px-6 duration-300 dark:border-textColor/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
                     navbarOpen
                       ? "visibility top-full opacity-100"
                       : "invisible top-[120%] opacity-0"
                   }`}
                 >
                   <ul className="block lg:flex lg:space-x-12">
-                    {menuData.filter((menuItem)=> !menuItem.path.includes("#")).map((menuItem, index) => (
-                      <li key={menuItem.id} className="group relative">
+                    {menuData
+                      .filter((menuItem) => !menuItem.path.includes("#"))
+                      .map((menuItem, index) => (
+                        <li key={menuItem.id} className="group relative">
                           <Link
                             href={menuItem.path}
                             className={`flex py-2 text-base text-dark transition-all ease-in hover:!text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
                           >
                             {menuItem.title}
                           </Link>
-                      </li>
-                    ))}
-                    {path == "/" && menuData.filter((menuItem)=> menuItem.path.includes("#")).map((menuItem, index) => (
-                      <li key={menuItem.id} className="group relative">
-                          <Link
-                            href={menuItem.path}
-                            className={`flex py-2 text-base text-dark transition-all ease-in hover:!text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
-                          >
-                            {menuItem.title}
-                          </Link>
-                      </li>
-                    ))}
+                        </li>
+                      ))}
+                    {path == "/" &&
+                      menuData
+                        .filter((menuItem) => menuItem.path.includes("#"))
+                        .map((menuItem, index) => (
+                          <li key={menuItem.id} className="group relative">
+                            <Link
+                              href={menuItem.path}
+                              className={`flex py-2 text-base text-dark transition-all ease-in hover:!text-primary dark:text-white lg:mr-0 lg:inline-flex lg:py-6 lg:px-0 lg:hover:scale-110`}
+                            >
+                              {menuItem.title}
+                            </Link>
+                          </li>
+                        ))}
                   </ul>
                 </nav>
               </div>
-              <div className="flex items-center justify-end pr-20 gap-4 lg:pr-0">
-                  <ThemeToggler />
+              <div className="flex items-center justify-end gap-4 pr-20 lg:pr-0">
+                <ThemeToggler />
               </div>
             </div>
           </div>

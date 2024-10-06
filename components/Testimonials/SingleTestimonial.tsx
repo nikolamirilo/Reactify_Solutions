@@ -19,7 +19,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
   return (
     <div className="w-full">
       <div
-        className="wow fadeInUp relative rounded-md bg-white p-8 shadow-one dark:bg-[#1D2144] lg:px-5 xl:px-8 min-h-[400px]"
+        className="wow fadeInUp relative min-h-[400px] rounded-md bg-primary bg-opacity-5 p-8 shadow-one lg:px-5 xl:px-8"
         data-wow-delay=".1s"
       >
         <BiSolidQuoteAltLeft
@@ -27,7 +27,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
           color="#D3D3D3"
           className="-z-1 absolute top-1 right-5"
         />
-        <p className="relative mb-8 min-h-[8rem] border-b border-body-color border-opacity-10 pt-2 pb-8 text-base leading-relaxed text-body-color dark:border-white dark:border-opacity-10 dark:text-white">
+        <p className="relative mb-8 min-h-[8rem] border-b border-textColor border-opacity-10 pt-2 pb-8 text-base leading-relaxed text-textColor dark:border-white dark:border-opacity-10 dark:text-white">
           {testimonial.content}
         </p>
         <div className="flex items-center">
@@ -38,7 +38,7 @@ const SingleTestimonial = ({ testimonial }: { testimonial: Testimonial }) => {
             <h5 className="ml-1 mb-2 text-lg font-semibold text-dark dark:text-white lg:text-base xl:text-lg">
               {testimonial.fullname}
             </h5>
-            <p className="ml-1 text-base text-body-color">
+            <p className="ml-1 text-base text-textColor">
               {testimonial.profession}
             </p>
           </div>

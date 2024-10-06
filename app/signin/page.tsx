@@ -11,10 +11,10 @@ const SigninPage = () => {
                 <h3 className="mb-3 text-center text-2xl font-bold text-black dark:text-white sm:text-3xl">
                   Sign in to your account
                 </h3>
-                <p className="mb-11 text-center text-base font-medium text-body-color">
+                <p className="mb-11 text-center text-base font-medium text-textColor">
                   Login to your account for a faster checkout.
                 </p>
-                <button className="mb-6 flex w-full items-center justify-center rounded-md bg-white p-3 text-base font-medium text-body-color shadow-one hover:text-primary dark:bg-[#242B51] dark:text-body-color dark:shadow-signUp dark:hover:text-white">
+                <button className="mb-6 flex w-full items-center justify-center rounded-md bg-white p-3 text-base font-medium text-textColor shadow-one hover:text-primary dark:bg-[#242B51] dark:text-textColor dark:shadow-signUp dark:hover:text-white">
                   <span className="mr-3">
                     <svg
                       width="20"
@@ -51,11 +51,11 @@ const SigninPage = () => {
                   Sign in with Google
                 </button>
                 <div className="mb-8 flex items-center justify-center">
-                  <span className="hidden h-[1px] w-full max-w-[70px] bg-body-color sm:block"></span>
-                  <p className="w-full px-5 text-center text-base font-medium text-body-color">
+                  <span className="hidden h-[1px] w-full max-w-[70px] bg-textColor sm:block"></span>
+                  <p className="w-full px-5 text-center text-base font-medium text-textColor">
                     Or, sign in with your email
                   </p>
-                  <span className="hidden h-[1px] w-full max-w-[70px] bg-body-color sm:block"></span>
+                  <span className="hidden h-[1px] w-full max-w-[70px] bg-textColor sm:block"></span>
                 </div>
                 <form>
                   <div className="mb-8">
@@ -69,7 +69,7 @@ const SigninPage = () => {
                       type="email"
                       name="email"
                       placeholder="Enter your Email"
-                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-textColor placeholder-textColor shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
                   </div>
                   <div className="mb-8">
@@ -83,14 +83,14 @@ const SigninPage = () => {
                       type="password"
                       name="password"
                       placeholder="Enter your Password"
-                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                      className="w-full rounded-md border border-transparent py-3 px-6 text-base text-textColor placeholder-textColor shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                     />
                   </div>
                   <div className="mb-8 flex flex-col justify-between sm:flex-row sm:items-center">
                     <div className="mb-4 sm:mb-0">
                       <label
                         htmlFor="checkboxLabel"
-                        className="flex cursor-pointer select-none items-center text-sm font-medium text-body-color"
+                        className="flex cursor-pointer select-none items-center text-sm font-medium text-textColor"
                       >
                         <div className="relative">
                           <input
@@ -98,7 +98,7 @@ const SigninPage = () => {
                             id="checkboxLabel"
                             className="sr-only"
                           />
-                          <div className="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-body-color border-opacity-20 dark:border-white dark:border-opacity-10">
+                          <div className="box mr-4 flex h-5 w-5 items-center justify-center rounded border border-textColor border-opacity-20 dark:border-white dark:border-opacity-10">
                             <span className="opacity-0">
                               <svg
                                 width="11"
@@ -135,7 +135,7 @@ const SigninPage = () => {
                     </button>
                   </div>
                 </form>
-                <p className="text-center text-base font-medium text-body-color">
+                <p className="text-center text-base font-medium text-textColor">
                   Don’t you have an account?
                   <Link href="/signup" className="text-primary hover:underline">
                     Sign up

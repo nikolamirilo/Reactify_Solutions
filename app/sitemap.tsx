@@ -1,7 +1,7 @@
-import { MetadataRoute } from "next"
+import { MetadataRoute } from "next";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
-  const baseUrl = process.env.APP_URL
+  const baseUrl = process.env.APP_URL;
   return [
     {
       url: `${baseUrl}`,
@@ -26,6 +26,6 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
       lastModified: new Date(),
       changeFrequency: "monthly",
       priority: 0.7,
-    }
-  ]
+    },
+  ];
 }

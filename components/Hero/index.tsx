@@ -15,11 +15,15 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                 Reactify Solutions - Drive your technological growth
+                  Reactify Solutions - Drive your technological growth
                 </h1>
-                <p className="mb-12 text-base !leading-relaxed text-body-color dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
-                
-                We provide cutting-edge digital solutions by utilizing the latest technologies to develop innovative and intuitive software that enhances your online presence and drives substantial growth. Integrating AI insights, we optimize your site for search engines and craft impactful marketing campaigns to maximize visibility and engagement.
+                <p className="mb-12 text-base !leading-relaxed text-textColor dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
+                  We provide cutting-edge digital solutions by utilizing the
+                  latest technologies to develop innovative and intuitive
+                  software that enhances your online presence and drives
+                  substantial growth. Integrating AI insights, we optimize your
+                  site for search engines and craft impactful marketing
+                  campaigns to maximize visibility and engagement.
                 </p>
                 <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link

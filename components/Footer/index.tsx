@@ -1,10 +1,13 @@
 const Footer = () => {
   return (
-<footer className="flex justify-center items-center bg-base-300 text-base-content p-4 wow fadeInUp relative z-10 bg-primary bg-opacity-5 py-5 border-body-color/[.15] dark:border-white/[.15] border-b border-t">
-  <aside>
-    <p className="text-center">Copyright ©{new Date().getFullYear()} - All rights reserved by Reactify Solutions</p>
-  </aside>
-</footer>
+    <footer className="bg-base-300 text-base-content wow fadeInUp relative z-10 flex items-center justify-center border-b border-t border-textColor/[.15] bg-primary bg-opacity-5 p-4 py-5 dark:border-white/[.15]">
+      <aside>
+        <p className="text-center">
+          Copyright ©{new Date().getFullYear()} - All rights reserved by
+          Reactify Solutions
+        </p>
+      </aside>
+    </footer>
   );
 };
 
@@ -39,7 +42,7 @@ export default Footer;
 //                     height={30}
 //                   />
 //                 </Link>
-//                 <p className="mb-9 text-base font-medium leading-relaxed text-body-color">
+//                 <p className="mb-9 text-base font-medium leading-relaxed text-textColor">
 //                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 //                   Integer lobortis.
 //                 </p>
@@ -113,7 +116,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/about"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       About{" "}
@@ -122,7 +125,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/contact"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       Contact{" "}
@@ -131,7 +134,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       Home{" "}
@@ -150,7 +153,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       TOS{" "}
@@ -159,7 +162,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       Privacy Policy{" "}
@@ -168,7 +171,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       Refund Policy{" "}
@@ -187,7 +190,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       Open Support Ticket{" "}
@@ -196,7 +199,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       Terms of Use{" "}
@@ -205,7 +208,7 @@ export default Footer;
 //                   <li>
 //                     <a
 //                       href="/"
-//                       className="mb-4 inline-block text-base font-medium text-body-color hover:text-primary"
+//                       className="mb-4 inline-block text-base font-medium text-textColor hover:text-primary"
 //                     >
 //                       {" "}
 //                       About{" "}

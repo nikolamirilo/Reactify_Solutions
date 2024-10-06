@@ -1,9 +1,12 @@
+const { nextui } = require("@nextui-org/theme");
+const withMT = require("@material-tailwind/react/utils/withMT");
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+module.exports = withMT({
   content: [
     "./app/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@nextui-org/theme/dist/components/(card|ripple).js",
   ],
   darkMode: "class",
   theme: {
@@ -15,11 +18,11 @@ module.exports = {
       current: "currentColor",
       transparent: "transparent",
       white: "#FFFFFF",
-      black: "#090E34",
+      black: "#001f",
       dark: "#1D2144",
       primary: "#1B998B",
       yellow: "#FBB040",
-      "body-color": "#959CB1",
+      textColor: "#959CB1",
     },
     screens: {
       xs: "450px",
@@ -48,5 +51,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
-};
+  plugins: [nextui()],
+});

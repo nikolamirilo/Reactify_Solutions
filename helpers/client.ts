@@ -8,21 +8,21 @@ export async function fetchData(path: string, options: FetchOptions) {
       method,
       cache: cache || "force-cache",
       body,
-      next: {revalidate},
+      next: { revalidate },
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
       },
     });
     if (!res.ok) {
-      throw new Error(res.statusText);
+      console.log(res.statusText);
     }
     return await res.json();
   } catch (error: unknown) {
     if (error instanceof Error) {
-      throw new Error(error.message);
+      console.log(error.message);
     } else {
-      throw new Error("An unknown error occurred");
+      console.log("An unknown error occurred");
     }
   }
 }

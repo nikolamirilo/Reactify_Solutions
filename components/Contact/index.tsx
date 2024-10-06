@@ -3,29 +3,28 @@ import { sendEmail } from "@/actions";
 import { fetchData } from "@/helpers/client";
 import { useState } from "react";
 
-
 const Contact = () => {
-  const [name, setName]= useState("")
-  const [message, setMessage] = useState("")
-  const [email, setEmail] = useState("")
-  
-  async function handleSubmit (e:any) {
-    e.preventDefault()
-    const res = await sendEmail({name, email, message})
-    if(res == true){
-      alert("Thank you for contact!")
-      setName("")
-      setMessage("")
-      setEmail("")
-    }else{
-    alert("Error occured, please contact support")
+  const [name, setName] = useState("");
+  const [message, setMessage] = useState("");
+  const [email, setEmail] = useState("");
+
+  async function handleSubmit(e: any) {
+    e.preventDefault();
+    const res = await sendEmail({ name, email, message });
+    if (res == true) {
+      alert("Thank you for contact!");
+      setName("");
+      setMessage("");
+      setEmail("");
+    } else {
+      alert("Error occured, please contact support");
     }
   }
   return (
     <section id="contact" className="overflow-hidden pt-5 pb-16">
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
-          <div className="w-full px-4 max-w-[70rem]">
+          <div className="w-full max-w-[70rem] px-4">
             <div
               className="wow fadeInUp mb-12 rounded-md bg-primary/[3%] py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
@@ -34,8 +33,11 @@ const Contact = () => {
               <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
                 Want to contact us?
               </h2>
-              <p className="mb-12 text-base font-medium text-body-color">
-              We'd love to hear from you! Simply fill out the form below, and one of our team members will respond within 24 hours. Whether you have questions, need assistance, or want to learn more about our services, we're here to help.
+              <p className="mb-12 text-base font-medium text-textColor">
+                We'd love to hear from you! Simply fill out the form below, and
+                one of our team members will respond within 24 hours. Whether
+                you have questions, need assistance, or want to learn more about
+                our services, we're here to help.
               </p>
               <form action="submit" onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
@@ -48,11 +50,11 @@ const Contact = () => {
                         Your Name
                       </label>
                       <input
-                      value={name}
-                      onChange={(e:any)=>setName(e.target.value)}
+                        value={name}
+                        onChange={(e: any) => setName(e.target.value)}
                         type="text"
                         placeholder="Enter your name"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-textColor placeholder-textColor shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -66,10 +68,10 @@ const Contact = () => {
                       </label>
                       <input
                         value={email}
-                        onChange={(e:any)=>setEmail(e.target.value)}
+                        onChange={(e: any) => setEmail(e.target.value)}
                         type="email"
                         placeholder="Enter your email"
-                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-body-color placeholder-body-color shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full rounded-md border border-transparent py-3 px-6 text-base text-textColor placeholder-textColor shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -83,16 +85,19 @@ const Contact = () => {
                       </label>
                       <textarea
                         value={message}
-                        onChange={(e:any)=>setMessage(e.target.value)}
+                        onChange={(e: any) => setMessage(e.target.value)}
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark dark:text-white shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:shadow-signUp"
+                        className="w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus:border-primary focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
-                    <button type="submit" className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp">
+                    <button
+                      type="submit"
+                      className="rounded-md bg-primary py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                    >
                       Submit
                     </button>
                   </div>
