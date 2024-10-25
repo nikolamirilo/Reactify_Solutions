@@ -27,7 +27,7 @@ const Solutions = () => {
           />
 
           <Carousel
-            className="h-[500px] w-11/12  max-w-[1000px] rounded-xl md:w-9/12"
+            className="h-[500px] w-[98vw]  max-w-[1000px] rounded-xl md:w-9/12"
             autoplay={true}
             prevArrow={({ handlePrev }) => (
               <IconButton
