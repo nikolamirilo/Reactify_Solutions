@@ -10,7 +10,8 @@ interface DatePickerContextType {
 const DatePickerContext = createContext<DatePickerContextType | undefined>(undefined)
 
 export function DatePickerProvider({ children }: { children: React.ReactNode }) {
-  const [selectedDate, setSelectedDate] = useState<Date | null>(null)
+  const todaysDate = new Date()
+  const [selectedDate, setSelectedDate] = useState<Date | null>(todaysDate)
 
   return (
     <DatePickerContext.Provider value={{ selectedDate, setSelectedDate }}>

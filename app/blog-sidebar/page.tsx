@@ -4,7 +4,7 @@ import TagButton from "@/components/Blog/TagButton";
 import NewsLatterBox from "@/components/Contact/NewsLatterBox";
 import Image from "next/image";
 
-const BlogSidebarPage = () => {
+export default function page () {
   return (
     <>
       <section className="overflow-hidden pt-[180px] pb-[120px]">
@@ -458,4 +458,3 @@ const BlogSidebarPage = () => {
   );
 };
 
-export default BlogSidebarPage;

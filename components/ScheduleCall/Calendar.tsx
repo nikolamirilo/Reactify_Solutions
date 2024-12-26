@@ -96,8 +96,8 @@ export default function Calendar() {
             isSelected(i)
               ? 'bg-primaryColor text-white'
               : isToday(i)
-              ? 'bg-yellow'
-              : 'hover:bg-primaryColor'
+              ? 'bg-dark text-white'
+              : 'hover:bg-primaryColor hover:text-white'
           }`}
         >
           {i}
@@ -126,7 +126,7 @@ export default function Calendar() {
   }
 
   return (
-    <div className="p-4 dark:bg-white bg-dark rounded-lg shadow-lg dark:text-black text-white h-full">
+    <div className="p-4 dark:bg-white bg-opacity-5 bg-primaryColor rounded-lg shadow-lg text-black h-full">
       <div className="flex items-center justify-between">
         <h2 className="text-lg font-semibold mb-8">
           {monthNames[currentDate.getMonth()]} {currentDate.getFullYear()}

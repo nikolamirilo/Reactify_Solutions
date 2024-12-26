@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   title: "Reactify Solutions",
 };
 
-async function Home() {
+export default async function page () {
   return (
     <>
       <ScrollUp />
@@ -27,4 +27,3 @@ async function Home() {
     </>
   );
 }
-export default Home;

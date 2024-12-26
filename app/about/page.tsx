@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "About Us",
 };
 
-const AboutPage = () => {
+export default function page () {
   return (
     <>
       <Breadcrumb
@@ -20,4 +20,3 @@ const AboutPage = () => {
   );
 };
 
-export default AboutPage;

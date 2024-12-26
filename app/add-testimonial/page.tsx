@@ -6,7 +6,7 @@ import React from "react";
 export const metadata: Metadata = {
   title: "Add Testimonial",
 };
-const page = () => {
+export default function page () {
   return (
     <>
       <Breadcrumb
@@ -18,4 +18,3 @@ const page = () => {
   );
 };
 
-export default page;

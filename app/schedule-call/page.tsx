@@ -1,24 +1,24 @@
-'use client'
+import Breadcrumb from "@/components/Common/Breadcrumb";
+import ScheduleCall from "@/components/ScheduleCall"
+import { Metadata } from "next";
 
-import Calendar from "@/components/ScheduleCall/Calendar"
-import ScheduleForm from "@/components/ScheduleCall/ScheduleForm"
-import { DatePickerProvider } from "@/context/DatePickerContext"
 
-export default function ScheduleCall() {
+export const metadata: Metadata = {
+  title: "Schedule a Call",
+};
+
+
+export default function page() {
   return (
-    <DatePickerProvider>
-      <div className="container mx-auto p-4 pt-32 lg:pt-0 min-h-screen flex flex-col justify-center items-center w-full">
-        <h1 className="text-3xl font-bold mb-10 text-center">Schedule a Call</h1>
-        <div className="flex flex-col lg:flex-row gap-8 w-full">
-          <div className="w-full lg:w-2/3">
-            <Calendar />
-          </div>
-          <div className="w-full lg:w-1/3">
-            <ScheduleForm />
-          </div>
+    <div className="min-h-screen">
+        <Breadcrumb
+          pageName="Schedule a Call"
+          description="At Reactify Solutions, we're always here to help you with your digital needs. Whether you have a question, need support, or want to learn more about how we can assist you, please don't hesitate to reach out."
+        />
+        <div className="flex flex-col lg:flex-row gap-8 container">
+          <ScheduleCall/>
         </div>
       </div>
-    </DatePickerProvider>
   )
 }
 

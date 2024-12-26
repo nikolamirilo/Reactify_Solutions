@@ -10,7 +10,7 @@ const Contact = () => {
 
   async function handleSubmit(e: any) {
     e.preventDefault();
-    const res = await sendEmail({ name, email, message });
+    const res = await sendEmail({ name, email, message, subject:'New message from Reactify Solutions website' });
     if (res == true) {
       alert("Thank you for contact!");
       setName("");

@@ -49,12 +49,12 @@ export async function getAllTestimonials() {
   }
 }
 export async function sendEmail(contactData:ContactData) {
-  const {message, email, name} = contactData
+  const {message, email, name, subject} = contactData
   try{
      const res = await resend.emails.send({
           from: 'onboarding@resend.dev',
           to: 'reactify.developer@gmail.com',
-          subject: 'New message from Reactify Solutions website',
+          subject: subject,
           html: `<div>
           <p>Email: ${email}</p>
           <p>Name: ${name}</p>
