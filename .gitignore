@@ -24,6 +24,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+TODO.md
 .pnpm-debug.log*
 
 # local env files
