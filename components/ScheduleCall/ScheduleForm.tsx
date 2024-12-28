@@ -42,7 +42,7 @@ export default function ScheduleForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-white text-black focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-black focus:ring-1  focus:border-primaryColor"
           />
         </div>
         <div>
@@ -55,7 +55,7 @@ export default function ScheduleForm() {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-white text-black focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-black focus:ring-1  focus:border-primaryColor"
           />
         </div>
         <div>
@@ -67,7 +67,7 @@ export default function ScheduleForm() {
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-white text-black focus:ring-1 focus:ring-blue-500 focus:border-blue-500 min-h-[100px]"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-black focus:ring-1  focus:border-primaryColor min-h-[100px]"
           />
         </div>
         <div>

@@ -5,7 +5,7 @@ import SingleClient from "./SingleClient";
 const Clients = () => {
   return (
     <section className="pt-16">
-      <div className="bg-primaryColor container flex flex-col items-center justify-center rounded-xl bg-opacity-5 pt-20">
+      <div className="bg-primaryColor container flex flex-col items-center justify-center rounded-xl bg-opacity-5 pt-12">
         <SectionTitle
           title="Our Clients"
           paragraph="At Reactify Solutions, we are proud to partner with a diverse range of clients across various industries. From startups to established enterprises, our clients trust us to deliver innovative digital solutions that meet their unique needs."

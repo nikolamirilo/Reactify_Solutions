@@ -28,7 +28,7 @@ const CreateTestimonial = () => {
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full max-w-[70rem] px-4">
             <div
-              className="wow fadeInUp bg-primaryColor/[3%] mb-12 rounded-md py-11 px-8 dark:bg-dark sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+              className="wow fadeInUp mb-12 rounded-md py-11 px-8 bg-opacity-5 bg-primaryColor sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
               data-wow-delay=".15s
             "
             >
@@ -49,7 +49,7 @@ const CreateTestimonial = () => {
                         }}
                         type="text"
                         placeholder="Enter your name"
-                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:text-white dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -68,7 +68,7 @@ const CreateTestimonial = () => {
                         }}
                         type="text"
                         placeholder="Enter your profession"
-                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:text-white dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -101,7 +101,7 @@ const CreateTestimonial = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="focus:border-primaryColor w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none dark:bg-[#242B51] dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:text-white dark:shadow-signUp"
                       ></textarea>
                     </div>
                   </div>

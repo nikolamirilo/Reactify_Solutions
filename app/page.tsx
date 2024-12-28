@@ -7,6 +7,7 @@ import Technologies from "@/components/Technologies";
 import { Metadata } from "next";
 import Testimonials from "@/components/Testimonials";
 import Solutions from "@/components/Solutions";
+import CTA from "@/components/CTA/CTA";
 
 export const metadata: Metadata = {
   title: "Reactify Solutions",
@@ -24,6 +25,7 @@ export default async function page () {
       {/* <Video /> */}
       <Clients />
       <Testimonials />
+      <CTA/>
     </>
   );
 }

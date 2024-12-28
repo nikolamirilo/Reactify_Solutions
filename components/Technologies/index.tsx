@@ -5,7 +5,7 @@ import { technologiesData } from "@/constants";
 
 const Technologies = () => {
   return (
-    <section className="pt-16" id="technologies">
+    <section className="pt-8 pb-8" id="technologies">
       <div className="bg-primaryColor container flex flex-col items-center justify-center rounded-xl bg-opacity-5 pt-20">
         <SectionTitle
           title="Technologies Stack"

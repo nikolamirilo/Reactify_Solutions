@@ -8,7 +8,7 @@ const SingleService = ({ service }: { service: Service }) => {
         className="wow fadeInUp flex flex-col items-center justify-center md:items-start"
         data-wow-delay=".15s"
       >
-        <div className="bg-primaryColor text-primaryColor mb-10 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-opacity-10">
+        <div className="bg-primaryColor text-primaryColor mb-5 flex h-[70px] w-[70px] items-center justify-center rounded-md bg-opacity-10">
           {icon}
         </div>
         <h3 className="mb-5 text-center text-xl font-bold text-black dark:text-white sm:text-2xl md:text-left lg:text-xl xl:text-2xl">

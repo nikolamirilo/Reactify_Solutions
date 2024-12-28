@@ -15,7 +15,7 @@ const Hero = () => {
                 data-wow-delay=".2s"
               >
                 <h1 className="mb-5 text-3xl font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-5xl md:leading-tight">
-                  Reactify Solutions - Drive your technological growth
+                  Accelerate your technological growth with innovative solutions.
                 </h1>
                 <p className="mb-12 text-base !leading-relaxed text-textColor dark:text-white dark:opacity-90 sm:text-lg md:text-xl">
                   We provide cutting-edge digital solutions by utilizing the
