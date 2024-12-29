@@ -71,41 +71,36 @@ export const clientsData: Client[] = [
   {
     name: "Montre Shop",
     href: "https://www.montre-shop.com/",
-    image: "/images/brands/Montre-removebg-preview.png",
+    image: "/images/clients/Montre-removebg-preview.png",
   },
   {
     name: "Minexa.ai",
     href: "https://www.minexa.ai/",
-    image: "/images/brands/Minexa.png",
+    image: "/images/clients/Minexa.png",
   },
   {
     name: "Beauty By Claire",
     href: "https://beautybyclaire.rs/",
-    image: "/images/brands/Claire-removebg-preview.png",
+    image: "/images/clients/Claire-removebg-preview.png",
   },
   {
     name: "We Buy In Dubai",
     href: "https://webuyindubai.com/",
-    image: "/images/brands/WeBuyInDubai-removebg-preview.png",
+    image: "/images/clients/WeBuyInDubai-removebg-preview.png",
   },
   {
     name: "Swapabee",
     href: "https://play.google.com/store/apps/details?id=com.swapabee_20&hl=en_US&pli=1",
-    image: "/images/brands/Swapabee-removebg-preview.png",
+    image: "/images/clients/Swapabee-removebg-preview.png",
   },
   {
     name: "TicketFlow",
     href: "https://ticketflow.rs/",
-    image: "/images/brands/TicketFlow-removebg-preview.png",
+    image: "/images/clients/TicketFlow-removebg-preview.png",
   },
   {
     name: "Arioso Investment AG",
     href: "https://arioso-investment-ag.netlify.app/",
-    image: "/images/brands/Arioso_Investment-removebg-preview.png",
-  },
-  {
-    name: "C2S",
-    href: "https://c2s.fonis.rs/pocetna",
-    image: "/images/brands/C2S-removebg-preview.png",
-  },
+    image: "/images/clients/Arioso_Investment-removebg-preview.png",
+  }
 ];
