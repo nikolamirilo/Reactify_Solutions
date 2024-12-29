@@ -15,7 +15,7 @@ const SingleClient = ({ client }: { client: Client }) => {
           <Image
             src={image}
             alt={name}
-            width={160}
+            width={name == "Minexa.ai" ? 100 : 160}
             height={100}
           />
         </a>

@@ -12,7 +12,7 @@ const DatePickerContext = createContext<DatePickerContextType | undefined>(undef
 export function DatePickerProvider({ children }: { children: React.ReactNode }) {
   const todaysDate = new Date()
   const [selectedDate, setSelectedDate] = useState<Date | null>(todaysDate)
-
+  
   return (
     <DatePickerContext.Provider value={{ selectedDate, setSelectedDate }}>
       {children}

@@ -74,6 +74,11 @@ export const clientsData: Client[] = [
     image: "/images/brands/Montre-removebg-preview.png",
   },
   {
+    name: "Minexa.ai",
+    href: "https://www.minexa.ai/",
+    image: "/images/brands/Minexa.png",
+  },
+  {
     name: "Beauty By Claire",
     href: "https://beautybyclaire.rs/",
     image: "/images/brands/Claire-removebg-preview.png",

@@ -2,17 +2,23 @@
 import { sendEmail } from "@/actions";
 import { fetchData } from "@/helpers/client";
 import { useState } from "react";
+import InfoModal from "../Modal/InfoModal";
+import { ImSpinner9 } from "react-icons/im";
 
 const Contact = () => {
   const [name, setName] = useState("");
   const [message, setMessage] = useState("");
   const [email, setEmail] = useState("");
+  const [isLoading, setIsLoading] = useState(false)
+  const [isOpen, setIsOpen] = useState(false)
 
   async function handleSubmit(e: any) {
     e.preventDefault();
+    setIsLoading(true)
     const res = await sendEmail({ name, email, message, subject:'New message from Reactify Solutions website' });
     if (res == true) {
-      alert("Thank you for contact!");
+      setIsOpen(true)
+      setIsLoading(false)
       setName("");
       setMessage("");
       setEmail("");
@@ -22,6 +28,7 @@ const Contact = () => {
   }
   return (
     <section id="contact" className="overflow-hidden pt-5 pb-16">
+      {isOpen ? <InfoModal isOpen={isOpen} setIsOpen={setIsOpen} message="Thank you for reaching out! We have received your message and will respond to you via email shortly."/> : null}
       <div className="container">
         <div className="-mx-4 flex flex-wrap">
           <div className="w-full max-w-[70rem] px-4">
@@ -30,15 +37,6 @@ const Contact = () => {
               data-wow-delay=".15s
               "
             >
-              <h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
-                Want to contact us?
-              </h2>
-              <p className="mb-12 text-base font-medium text-textColor">
-                We'd love to hear from you! Simply fill out the form below, and
-                one of our team members will respond within 24 hours. Whether
-                you have questions, need assistance, or want to learn more about
-                our services, we're here to help.
-              </p>
               <form action="submit" onSubmit={handleSubmit}>
                 <div className="-mx-4 flex flex-wrap">
                   <div className="w-full px-4 md:w-1/2">
@@ -54,7 +52,7 @@ const Contact = () => {
                         onChange={(e: any) => setName(e.target.value)}
                         type="text"
                         placeholder="Enter your name"
-                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-textColor placeholder-textColor shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark placeholder-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -71,7 +69,7 @@ const Contact = () => {
                         onChange={(e: any) => setEmail(e.target.value)}
                         type="email"
                         placeholder="Enter your email"
-                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-textColor placeholder-textColor shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full rounded-md border border-transparent py-3 px-6 text-base text-dark placeholder-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:shadow-signUp"
                       />
                     </div>
                   </div>
@@ -89,15 +87,16 @@ const Contact = () => {
                         name="message"
                         rows={5}
                         placeholder="Enter your Message"
-                        className="focus:border-primaryColor w-full resize-none rounded-md border border-transparent py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:text-white dark:shadow-signUp"
+                        className="focus:border-primaryColor w-full resize-none rounded-md border border-transparent placeholder-dark py-3 px-6 text-base text-dark shadow-one outline-none focus-visible:shadow-none bg-gray-200 dark:shadow-signUp"
                       ></textarea>
                     </div>
                   </div>
                   <div className="w-full px-4">
                     <button
                       type="submit"
-                      className="bg-primaryColor rounded-md py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
+                      className="bg-primaryColor rounded-md flex flex-row gap-1 py-4 px-9 text-base font-medium text-white transition duration-300 ease-in-out hover:bg-opacity-80 hover:shadow-signUp"
                     >
+                      {isLoading ? <ImSpinner9 size={20} className="animate-spin"/> : null}
                       Submit
                     </button>
                   </div>

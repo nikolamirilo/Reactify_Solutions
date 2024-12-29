@@ -4,7 +4,7 @@ import { useDatePicker } from "@/context/DatePickerContext"
 import { useState } from "react"
 import { ImSpinner9 } from "react-icons/im";
 
-export default function ScheduleForm() {
+export default function ScheduleForm({setIsOpen}: {setIsOpen: any}) {
   const { selectedDate } = useDatePicker()
   const [email, setEmail] = useState('')
   const [fullName, setFullName] = useState('')
@@ -17,7 +17,7 @@ export default function ScheduleForm() {
     console.log('Form submitted:', { email, fullName, subject, selectedDate })
     const res = await sendEmail({ name:fullName, email, message: `I would like to schedule a call on date: ${selectedDate.toLocaleDateString()}.<br><br>Subject: ${subject}.`, subject: 'New Lead on Reactify Solutions'});
     if (res == true) {
-      alert("Thank you for reaching out to us!");
+      setIsOpen(true)
       setFullName("");
       setSubject("");
       setEmail("");
@@ -26,11 +26,10 @@ export default function ScheduleForm() {
       alert("Error occured, please contact support");
       setIsLoading(false)
       }
-
   }
 
   return (
-    <form onSubmit={handleSubmit} className="bg-opacity-5 bg-primaryColor text-blackshadow-lg rounded-lg p-6">
+    <form onSubmit={handleSubmit} className="bg-opacity-5 bg-primaryColor text-dark shadow-lg rounded-lg p-6">
       <div className="space-y-4">
         <div>
           <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-200 mb-1">
@@ -42,7 +41,7 @@ export default function ScheduleForm() {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-black focus:ring-1  focus:border-primaryColor"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none placeholder-dark  bg-gray-200 text-dark focus:ring-1  focus:border-primaryColor"
           />
         </div>
         <div>
@@ -55,7 +54,7 @@ export default function ScheduleForm() {
             value={fullName}
             onChange={(e) => setFullName(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-black focus:ring-1  focus:border-primaryColor"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 placeholder-dark text-dark focus:ring-1  focus:border-primaryColor"
           />
         </div>
         <div>
@@ -67,7 +66,7 @@ export default function ScheduleForm() {
             value={subject}
             onChange={(e) => setSubject(e.target.value)}
             required
-            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-black focus:ring-1  focus:border-primaryColor min-h-[100px]"
+            className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none bg-gray-200 text-dark focus:ring-1 placeholder-dark focus:border-primaryColor min-h-[100px]"
           />
         </div>
         <div>
