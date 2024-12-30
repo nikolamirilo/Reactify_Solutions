@@ -15,7 +15,7 @@ export default function ScheduleForm({setIsOpen}: {setIsOpen: any}) {
     e.preventDefault()
     setIsLoading(true)
     console.log('Form submitted:', { email, fullName, subject, selectedDate })
-    const res = await sendEmail({ name:fullName, email, message: `I would like to schedule a call on date: ${selectedDate.toLocaleDateString()}.<br><br>Subject: ${subject}.`, subject: 'New Lead on Reactify Solutions'});
+    const res = await sendEmail({ name:fullName, email, message: `I would like to schedule a call on date: ${selectedDate.toLocaleDateString()}.`, subject});
     if (res == true) {
       setIsOpen(true)
       setFullName("");

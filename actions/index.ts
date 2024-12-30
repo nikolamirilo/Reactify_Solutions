@@ -1,4 +1,5 @@
 "use server";
+import InformationEmail from "@/components/Emails/InformationEmail";
 import { resend } from "@/constants";
 import { ContactData } from "@/types";
 import { sql } from "@vercel/postgres";
@@ -52,14 +53,13 @@ export async function sendEmail(contactData:ContactData) {
   const {message, email, name, subject} = contactData
   try{
      const res = await resend.emails.send({
-          from: 'onboarding@resend.dev',
+          from: 'office@reactify-solutions.com',
           to: 'reactify.developer@gmail.com',
           subject: subject,
-          html: `<div>
-          <p>Email: ${email}</p>
-          <p>Name: ${name}</p>
-          <p>Message: ${message}</p>
-          </div>`
+          reply_to: email,
+          react: InformationEmail({
+            email, name, message, subject
+          }) as React.ReactElement,
         });
         console.log(res)
         if(res.error == null){
