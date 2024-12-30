@@ -21,7 +21,7 @@ export default async function page () {
       <AboutSectionOne />
       <Services />
       <Technologies />
-      <Solutions />
+      {/* <Solutions /> */}
       {/* <Video /> */}
       <Clients />
       <Testimonials />
